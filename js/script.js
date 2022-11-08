@@ -16,10 +16,9 @@ if (navigator.serviceWorker) {
  */
 function calculate() {
   // input
-  const fahrenheit = parseFloat(document.getElementById("radius").value)
+  const fahrenheit = parseFloat(document.getElementById("fahrenheit").value)
   // process
-  const celcius = (((fahrenheit - 32) * 5) / 9).toFixed(2)
+  const temp = ((fahrenheit - 32) * 5 / 9 ).toFixed(2)
   // output
-  document.getElementById("celcius").innerHTML =
-    "temperature is: " + celcius + " °C"
+  document.getElementById("temp").innerHTML = "temperature is: " + temp + " °C"
 }
