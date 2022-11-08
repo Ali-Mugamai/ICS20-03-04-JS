@@ -1,23 +1,24 @@
-// Copyright (c) 2020 ali-mugamai All rights reserved
+// Copyright (c) 2020 Ali Mugamai All rights reserved
 //
-// Created by: ali mugamai
-// Created on: Sep 2020
+// Created by: Ali Mugamai
+// Created on: oct 2022
 // This file contains the JS functions for index.html
 
 "use strict"
 
-/**
- * Check servie worker.
- */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-    scope: "/ICS2O-PWA-Test/",
+  navigator.serviceWorker.register("/ICS20-03-04-JS/sw.js", {
+    scope: "/ICS20-03-04-JS/",
   })
 }
-
 /**
- * This function displays an alert.
+ * This function calculates area and perimeter of rectangle.
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+function calculate() {
+  // input
+  const fahrenheit = parseFloat(document.getElementById("radius").value)
+  // process
+  const celcius = (((fahrenheit - 32) * 5) / 9).toFixed(2)
+  // output
+  document.getElementById("celcius").innerHTML = "the temperature is: " + celcius + " °C"
 }
