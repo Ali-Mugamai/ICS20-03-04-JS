@@ -20,5 +20,6 @@ function calculate() {
   // process
   const celcius = (((fahrenheit - 32) * 5) / 9).toFixed(2)
   // output
-  document.getElementById("celcius").innerHTML = "the temperature is: " + celcius + " °C"
+  document.getElementById("celcius").innerHTML =
+    "the temperature is: " + celcius + " °C"
 }
