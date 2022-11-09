@@ -16,9 +16,9 @@ if (navigator.serviceWorker) {
  */
 function calculate() {
   // input
-  const fahrenheit = parseFloat(document.getElementById("fahrenheit").value)
+  const f = parseFloat(document.getElementById("fahrenheit").value)
   // process
-  const temp = (((fahrenheit - 32) * 5) / 9).toFixed(2)
+  const temp = (((f - 32) * 5) / 9).toFixed(2)
   // output
-  document.getElementById("temp").innerHTML = "temperature is: " + temp + " °C"
+  document.getElementById("temperature").innerHTML = "temperature is: " + temp + " °C"
 }
